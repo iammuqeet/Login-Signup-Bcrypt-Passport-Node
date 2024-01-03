@@ -1,0 +1,28 @@
+<h1>
+    Register
+</h1>
+<form action="/register" method="post">
+    <div style="margin: 20px;">
+        <label>Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter you name" required />
+    </div>
+    <div style="margin: 20px;">
+        <label>Email</label>
+        <input type="email" id='email' name="email" placeholder="Enter you email" required />
+    </div>
+    <div style="margin: 20px;">
+        <label>Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter you password" required />
+    </div>
+    <button type="submit">Register</button>
+
+    <button type="button" onclick="goToLoginPage">Login</button>
+</form>
+
+
+<script>
+    function goToLoginPage() {
+        var loginPageUrl = "/login";
+        window.location.href = loginPageUrl;
+    }
+</script>
